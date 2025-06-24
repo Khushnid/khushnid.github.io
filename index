@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khushnidjon Keldiboev</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --fg: #ffffff;
+      --subtle: #999999;
+      --accent: #00ffe0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    body {
+      cursor: none;
+    }
+
+    .custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: transform 0.1s ease;
+      z-index: 10000;
+    }
+
+    main {
+      padding: 6rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+    }
+
+    section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: var(--subtle);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 4rem;
+    }
+
+    .info {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: var(--subtle);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #1a1a1a;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor" id="cursor"></div>
+
+  <main>
+    <section class="hero">
+      <h1>Khushnidjon Keldiboev</h1>
+      <p>A creative frontend developer passionate about clean design and meaningful UI.</p>
+      <div class="info">
+        🎂 15.08.1998<br>
+        📍 Tashkent
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I specialize in creating beautiful and functional web experiences. With a love for modern design and attention to detail, I strive to deliver fast, responsive, and accessible websites.</p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A modern portfolio template built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>Landing page with smooth scroll, animations, and responsive layout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:khushnidjon@example.com">khushnidjon@example.com</a></p>
+    </section>
+  </main>
+
+  <script>
+    // Cursor effect
+    const cursor = document.getElementById("cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.top = `${e.clientY}px`;
+      cursor.style.left = `${e.clientX}px`;
+    });
+
+    // Scroll reveal
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
