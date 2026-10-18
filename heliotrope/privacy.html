@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – Heliotrope</title>
+<meta name="description" content="What the app keeps on your phone, what it asks permission for, and the two Apple services it can call.">
+<style>
+  :root { --paper:#FBF8F1; --ink:#1F2330; --ink2:#586070; --line:#E7E2D6; --sun:#F4B02A; --sunpale:#FFF8E3; --link:#A86F00; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#15171D; --ink:#F3F0E8; --ink2:#B8BDC9; --line:#343740; --sunpale:#2A2413; --link:#F2B84B; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  h1 { font:700 2.1rem/1.15 "New York", Georgia, serif; margin:0 0 .4rem; }
+  h2 { font:700 1.3rem/1.25 "New York", Georgia, serif; margin:2.2rem 0 .5rem; }
+  p, li { color:var(--ink2); } li { margin:.3rem 0; }
+  strong { color:var(--ink); }
+  a { color:var(--link); }
+  .lead { font-size:1.1rem; }
+  .card { background:var(--sunpale); border:1px solid var(--line); border-radius:16px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .card p { margin:.2rem 0; color:var(--ink); }
+  table { width:100%; border-collapse:collapse; margin:.8rem 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:.55rem .6rem; border-bottom:1px solid var(--line); color:var(--ink2); }
+  th { color:var(--ink); }
+  footer { margin-top:3rem; font-size:.9rem; color:var(--ink2); }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy policy</h1>
+<p class="lead">Heliotrope works out when sun reaches the windows, rooms and things in your home. It was written so that your home stays on your phone. The app is free and shows an occasional full-screen ad.</p>
+<p>Effective 18 October 2026. Publisher: Khushnidjon Keldiboev.</p>
+
+<div class="card">
+<p><strong>In short.</strong> The app has no account and no tracking. The developer does not receive your scans, your location or anything else. The only third-party code is Google's ad and consent libraries (Google AdMob), described below. Two other features call Apple's own services.</p>
+</div>
+
+<h2>What the app keeps, and where</h2>
+<p>Everything is stored on your phone, in the app's own storage. Flats and raw scans are saved with iOS's complete file protection, so they are encrypted whenever the phone is locked:</p>
+<ul>
+<li>the flats you scan or edit: walls, doors, windows, the things you place, the skyline you traced at each window, the compass direction chosen for north;</li>
+<li>the flat's position (latitude and longitude; the app asks for kilometre-level accuracy only), its place name and its time zone, so the sun's path can be calculated;</li>
+<li>your settings: which advice to watch, reminder hours, the flat that is selected.</li>
+</ul>
+<p>The widget reads a small summary of the sunniest room from storage shared only between the app and its widget on your phone.</p>
+
+<h2>What the app asks permission for</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Camera</td><td>To scan rooms (Apple's RoomPlan) and to trace the sky from a window (ARKit). Camera images are not saved and not sent anywhere.</td></tr>
+<tr><td>Location, while in use</td><td>Asked once, when you start your first scan, to place the flat on the sun's path. The compass reading used to guess north comes through the same permission. The app does not track you and does not read your location in the background.</td></tr>
+<tr><td>Notifications</td><td>Only if you turn on Reminders. They are scheduled on your phone for the coming week.</td></tr>
+<tr><td>Photos</td><td>No permission is asked. When you pick a photo to identify a plant, you choose it in the system picker and the app sees only that photo. It is not saved with your flat.</td></tr>
+</table>
+
+<h2>The two Apple services the app can call</h2>
+<ul>
+<li><strong>Place name and time zone.</strong> After you allow location, the app asks Apple's location services (reverse geocoding) which place and time zone your coordinates are in. Apple receives the coordinates for that request and handles them under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. The developer never sees them.</li>
+<li><strong>Plant lookup (optional).</strong> If you choose "Identify from photo", the photo is analysed with Apple's Visual Look Up, which may contact Apple's servers. See <a href="https://www.apple.com/legal/privacy/data/en/siri-suggestions-search/">Apple's Search &amp; Privacy</a>. Skip it and pick the plant by hand: nothing is sent.</li>
+</ul>
+
+<h2>Ads (Google AdMob)</h2>
+<p>The app is free and shows a full-screen ad from Google AdMob now and then: after you leave the 3D view, Sun Replay or a room page, at most three a day, never on the camera screens, and not during the first day after you install it.</p>
+<ul>
+<li>To show an ad, Google's Mobile Ads SDK contacts Google's servers. According to <a href="https://developers.google.com/admob/ios/privacy/strategies">Google's description of the SDK</a> it may collect and use approximate location (from the network address), device identifiers, advertising data, how an ad was used, and performance and diagnostic data. Apple's privacy label for the app lists the same kinds of data.</li>
+<li>In regions with consent rules (the EEA, the UK and some US states) Google's consent form appears first, and ads are requested only if the choice allows it. <em>More &rarr; Ad privacy choices</em> reopens the form.</li>
+<li>The app does not ask for tracking permission and does not use the advertising identifier to track you across other companies' apps and websites.</li>
+<li>The app does not give the SDK your flat, your scans, your photos or its own location readings. The SDK is handed an ad unit id and nothing else.</li>
+</ul>
+
+<h2>What you can share, and what you cannot lose by sharing</h2>
+<p>More &rarr; Diagnostics can create a file with your flat and the raw scan, for example to send to the developer for support. It is created only when you press the button, and it goes only where you choose in the share sheet. The app never sends it by itself. The file includes the flat's position, so read it before you send it.</p>
+
+<h2>Deleting your data</h2>
+<ul>
+<li>More &rarr; <em>Delete this flat from this phone</em> removes the flat and its raw scan. The widget then shows your next saved flat, or the demo flat if there is none.</li>
+<li>Deleting the app removes everything it stored, including the widget's summary, scheduled reminders and the small ad-timing record.</li>
+<li>There is nothing to delete on a server, because there is no server.</li>
+</ul>
+
+<h2>Tracking, advertising, sharing</h2>
+<p>The app does not track you across other companies' apps and websites, does not contain analytics or crash-reporting code of its own, and does not sell personal data. Its only third-party code is Google's ad SDK, described above. Apple's own crash reports reach the developer only if you have chosen to share app analytics with developers in iOS settings.</p>
+
+<h2>Children</h2>
+<p>The app is not aimed at children. The developer collects nothing from anyone. Its optional "baby's sleeping place" check is advice for parents, is off until you choose it, and is not medical advice.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at this address with a new effective date. A change that adds data collection would come with an app update that says so.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: see the <a href="support.html">support page</a>, or the developer's page at <a href="https://khushnid.github.io/khushnid-portfolio/">khushnid.github.io/khushnid-portfolio</a>.</p>
+
+<footer>Heliotrope, by Khushnidjon Keldiboev. Works out clear-sky sun times; it is not a safety or medical tool.</footer>
+</main>
+</body>
+</html>

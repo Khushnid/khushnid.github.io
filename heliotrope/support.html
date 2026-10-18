@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Heliotrope</title>
+<meta name="description" content="How scanning works, why a room may show no sun, and how to get help.">
+<style>
+  :root { --paper:#FBF8F1; --ink:#1F2330; --ink2:#586070; --line:#E7E2D6; --sun:#F4B02A; --sunpale:#FFF8E3; --link:#A86F00; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#15171D; --ink:#F3F0E8; --ink2:#B8BDC9; --line:#343740; --sunpale:#2A2413; --link:#F2B84B; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  h1 { font:700 2.1rem/1.15 "New York", Georgia, serif; margin:0 0 .4rem; }
+  h2 { font:700 1.3rem/1.25 "New York", Georgia, serif; margin:2.2rem 0 .5rem; }
+  p, li { color:var(--ink2); } li { margin:.3rem 0; }
+  strong { color:var(--ink); }
+  a { color:var(--link); }
+  .lead { font-size:1.1rem; }
+  .card { background:var(--sunpale); border:1px solid var(--line); border-radius:16px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .card p { margin:.2rem 0; color:var(--ink); }
+  details { border-bottom:1px solid var(--line); padding:.7rem 0; }
+  summary { cursor:pointer; color:var(--ink); font-weight:600; }
+  details p { margin:.5rem 0 0; }
+  footer { margin-top:3rem; font-size:.9rem; color:var(--ink2); }
+</style>
+</head>
+<body>
+<main>
+<h1>Support</h1>
+<p class="lead">Heliotrope shows when direct sun reaches each window, room and thing in your flat. Here is how it works, and what to do when something looks wrong.</p>
+
+<div class="card">
+<p><strong>Getting help.</strong> Open More &rarr; Diagnostics in the app to see what the app knows about your flat, then reach the developer through <a href="https://khushnid.github.io/khushnid-portfolio/">khushnid.github.io/khushnid-portfolio</a>. Say which iPhone and iOS version you have and what you expected to see. Please do not send a diagnostics file unless asked: it contains your flat's position.</p>
+</div>
+
+<h2>Questions</h2>
+
+<details><summary>Which iPhones can scan a room?</summary>
+<p>An iPhone with LiDAR: iPhone 12 Pro and later Pro models. Other iPhones can still explore the demo flat, which shows everything the app does on an invented flat.</p></details>
+
+<details><summary>How do I scan my flat?</summary>
+<p>Choose the room's name, then walk slowly along the walls so the camera sees every corner, doors and windows. Scan one room at a time; the rooms are joined into one flat when you finish. Large mirrors and glass walls can confuse a scan, so check the windows on the review page and fix them by hand if needed.</p></details>
+
+<details><summary>What does "look out the window" mean?</summary>
+<p>For each window the app needs to know what blocks the sky: a building opposite, a tree, a balcony above. Press the back of the phone flat against the glass facing out and tap Anchor, then step back a little, aim the cross at the edge of the sky, tap Trace, and sweep the whole view. Until a window has been traced, its times are a guess.</p></details>
+
+<details><summary>Why does a room show no sun, though sun comes in?</summary>
+<p>Open the room, choose the window, and read "Why is there sun, or none?". It shows the sky as that window sees it and says what blocks the sun at that time. A door that leads to a balcony is a wall with a gap to the scan: open the door's page and choose "Let sun in" to turn it into a glazed balcony door.</p></details>
+
+<details><summary>How accurate are the times?</summary>
+<p>They are clear-sky estimates from the sun's calculated position and the skyline you traced. Clouds, curtains, leaves, glass tint and new buildings are not known. Furniture is drawn in the 3D view but does not cast shadows in the sun times. Treat the times as a good guide, not a guarantee.</p></details>
+
+<details><summary>North looks wrong</summary>
+<p>The app guesses north from the compass when you start the first scan, and you can set it more reliably by pointing at the sun. If the sun's patches fall in the wrong place, set north again from the flat's setup screen ("Set north with the sun", then "Do it again").</p></details>
+
+<details><summary>Why did my reminders stop?</summary>
+<p>Reminders are scheduled on your phone for the coming week. Open the app now and then to renew them. Check that notifications are allowed for the app in iOS Settings, and that your quiet hours are not covering the sun's time.</p></details>
+
+<details><summary>How do I delete my flat?</summary>
+<p>More &rarr; Delete this flat from this phone. Deleting the app removes everything it stored. Nothing is kept on a server.</p></details>
+
+<details><summary>Why do I see ads, and can I stop them?</summary>
+<p>The app is free and shows an occasional full-screen ad from Google AdMob after you leave the 3D view, Sun Replay or a room: at most three a day, never while you scan or look out of a window, and not in the first day after install. In the EEA, the UK and some US states, More &rarr; Ad privacy choices lets you change your consent. There is no paid version yet.</p></details>
+
+<details><summary>Is the advice medical or safety advice?</summary>
+<p>No. It is general guidance. The optional baby's sleeping place check follows published safe-sleep and heat guidance but is not medical advice: ask a doctor or midwife about your child.</p></details>
+
+<p style="margin-top:2rem">See also the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>Heliotrope, by Khushnidjon Keldiboev.</footer>
+</main>
+</body>
+</html>
